@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diyana | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+<body class="bg-black text-white">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+    <!-- navbar -->
+    <div id="header">
+       <div class="container">
+        <nav>
+            <div class="logo">DIYANA</div>
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#project">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="bi bi-x-lg" onclick="closemenu()"></i>
+            </ul>
+            <i class="bi bi-list" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <h1>Hello, I'm Diyana K T</h1>
+            <p>Software Developer</p>
+        </div>
+       </div>
+       <div class="image">
+        <img src="/Images//img-removebg-preview.png" class="rounded float-end">
+       </div>
+    </div>
+    <!-- about -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="/Images/img2.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hi, I’m Diyana K T, a Software Developer in the making, passionate about building clean, user-friendly web experiences. I recently developed my own portfolio website using HTML, CSS, and JavaScript, showcasing my growing skill set in front-end development. I enjoy exploring modern technologies like React and the MERN stack, and I’m always eager to learn and push my boundaries. Whether it’s coding a responsive layout or solving a tricky bug, I love the challenge of turning ideas into real, interactive products. I’m also deeply interested in UI/UX design and how it shapes meaningful digital experiences. Outside of tech, I enjoy refining my personal brand and helping others with creative design ideas.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab(event, 'experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab(event, 'education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="experience">
+                        <ul>
+                            <li><span>Intern</span><br>Software development at Bridgeon</li>
+                            <li><span>Project 1</span><br>Developed a personal portfolio website using HTML,CSS, and JavaScript to showcase skills and projects</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>BCA</span><br>Bachelor of Computer Application-Calicut University</li>
+                            <li><span>12th Grade</span><br>Science Stream-GHSS Anamangad</li>
+                            <li><span>10th Grade</span><br>Kerala Syllabus-GGVHSS Perinthalmanna</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- skills -->
+   <div id="skills">
+    <div class="container">
+        <h1 class="sub-title">My Skills</h1>
+        <div class="skills-list">
+            <div>
+                <i class="fab fa-html5 fa-5x" style="color: #ffae3d;"></i>
+                <h2>HTML</h2>
+                <p>Building Structured web pages</p>
+            </div>
+            <div>
+                <i class="fab fa-css3-alt fa-5x" style="color: #74C0FC;"></i>
+                <h2>CSS</h2>
+                <p>Styling and responsive design</p>
+            </div>
+            <div>
+                <i class="fab fa-js-square fa-5x" style="color: #f5e475;"></i>
+                <h2>JavaScript</h2>
+                <p>interactive web Scripting</p>
+            </div>
+            <div>
+                <i class="fab fa-bootstrap fa-5x" style="color: #633ed0;"></i>
+                <h2>Bootstrap</h2>
+                <p>Responsive Design</p>
+            </div>
+        </div>
+    </div>
+   </div>
+
+   <!-- projects -->
+    <div id="project">
+        <div class="container">
+            <h1 class="sub-title">Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="/Images/project.png" alt="">
+                    <div class="layer">
+                        <h3>E-Commerce Clone</h3>
+                        <p>Using HTML5 and CSS3, focusing on clean design and seamless user experience. Implemented structured layouts with Flexbox and CSS Grid for responsiveness across device. Key features include a homepage banner,category listing with hover effects, navigation menus, and a footer section. This project helped strengthen my skills in front-end development, responsive design, and UI optimization, ensuring an attractive and functional layout aligned with modern web design principles.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- contact -->
+     <div id="contact">
+        <div class="container">
+            <div class="rows">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="bi bi-send-fill"></i> shamsudheendiyana@gmail.com</p>
+                    <p><i class="bi bi-telephone-fill"></i> 8848860794</p>
+                    <div class="social-icons">
+                        <a href=""><i class="bi bi-linkedin"></i></a>
+                        <a href=""><i class="bi bi-instagram"></i></a>
+                    </div>
+                    <a href="/Images/Resume.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>© 2025 Diyana K T. All reserved.</p>
+        </div>
+     </div>
+         <script src="script.js"></script>
+
+</body>
+</html>
+
