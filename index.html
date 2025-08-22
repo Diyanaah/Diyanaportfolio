@@ -4,11 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Diyana | Portfolio</title>
+    <link rel="icon" type="image/png" href="/Images/logo.jpg">
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "b73p5gdef6iPQVbuw",
+      });
+   })();
+</script>
+<script src="script.js"></script>
 </head>
 <body class="bg-black text-white">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
@@ -16,7 +27,7 @@
     <div id="header">
        <div class="container">
         <nav>
-            <div class="logo">DIYANA</div>
+            <img src="/Images/logo.jpg" alt="">
             <ul id="sidemenu">
                 <li><a href="#header">Home</a></li>
                 <li><a href="#about">About</a></li>
@@ -30,10 +41,11 @@
         <div class="header-text">
             <h1>Hello, I'm Diyana K T</h1>
             <p>Software Developer</p>
+            <a href="/Images/Resume.pdf" download class="btn btn2">Download CV</a>
         </div>
        </div>
        <div class="image">
-        <img src="/Images//img-removebg-preview.png" class="rounded float-end">
+        <img src="/Images/img2.jpg" >
        </div>
     </div>
     <!-- about -->
@@ -45,7 +57,7 @@
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title">About Me</h1>
-                    <p>Hi, I’m Diyana K T, a Software Developer in the making, passionate about building clean, user-friendly web experiences. I recently developed my own portfolio website using HTML, CSS, and JavaScript, showcasing my growing skill set in front-end development. I enjoy exploring modern technologies like React and the MERN stack, and I’m always eager to learn and push my boundaries. Whether it’s coding a responsive layout or solving a tricky bug, I love the challenge of turning ideas into real, interactive products. I’m also deeply interested in UI/UX design and how it shapes meaningful digital experiences. Outside of tech, I enjoy refining my personal brand and helping others with creative design ideas.</p>
+                    <p>Hi, I'm Diyana K T, a Web Developer in the making, passionate about building clean, user-friendly web experiences. I recently developed my own portfolio website using HTML, CSS, and JavaScript, showcasing my growing skill set in front-end development. I enjoy exploring modern technologies like React and the MERN stack, and I'm always eager to learn and push my boundaries. Whether it's coding a responsive layout or solving a tricky bug, I love the challenge of turning ideas into real, interactive products. I'm also deeply interested in UI/UX design and how it shapes meaningful digital experiences. Outside of tech, I enjoy refining my personal brand and helping others with creative design ideas.</p>
                     <div class="tab-titles">
                         <p class="tab-links active-link" onclick="opentab(event, 'experience')">Experience</p>
                         <p class="tab-links" onclick="opentab(event, 'education')">Education</p>
@@ -118,30 +130,63 @@
             <div class="rows">
                 <div class="contact-left">
                     <h1 class="sub-title">Contact Me</h1>
-                    <p><i class="bi bi-send-fill"></i> shamsudheendiyana@gmail.com</p>
+                    <p><i class="bi bi-send-fill"></i>
+                        <a href="mailto:shamsudheendiyana@gmail.com" class="text-white text-decoration-none">shamsudheendiyana@gmail.com</a></p>
                     <p><i class="bi bi-telephone-fill"></i> 8848860794</p>
                     <div class="social-icons">
-                        <a href=""><i class="bi bi-linkedin"></i></a>
-                        <a href=""><i class="bi bi-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/diyana-k-t-191690297?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="bi bi-linkedin"></i></a>
+                        <a href="https://www.instagram.com/_.diyanaah._?igsh=MTAyNGcxdzNna3M4eg=="><i class="bi bi-instagram"></i></a>
                     </div>
-                    <a href="/Images/Resume.pdf" download class="btn btn2">Download CV</a>
                 </div>
-                <div class="contact-right">
+                <!-- <div class="contact-right">
                     <form name="submit-to-google-sheet">
-                        <input type="text" name="Name" placeholder="Your Name" required>
-                        <input type="email" name="Email" placeholder="Your Email" required>
-                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                        <button type="submit" class="btn btn2">Submit</button>
+                        <input type="text" id="name" name="Name" placeholder="Your Name" required>
+                        <input type="email" id="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" id="message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" onclick="sendMail()" class="btn btn2">Submit</button>
                     </form>
                     <span id="msg"></span>
+                </div> -->
+                <!-- <div class="col-md-6 py-3">
+                    <div class="form-group">
+                        <h5 for="name">Name</h5>
+                        <input type="text" id="name" class="form-control" placeholder="Your Name">
+                    </div>
+                    <div class="form-group">
+                        <h5 for="email">Email</h5>
+                        <input type="email" id="email" class="form-control" placeholder="Your Email">
+                    </div>
+                    <div class="form-group">
+                        <h5 for="message">Message</h5>
+                        <textarea  id="message" rows="3" class="form-control"placeholder="Your Message"></textarea>
+                    </div>
+                    <button class="btn btn-primary" onclick="sendMail()">Submit</button>
+                </div> -->
+                <div class="col-md-6 py-3">
+    
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" id="name" class="form-control" placeholder="Your Name">
                 </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" id="email" class="form-control" placeholder="Your Email">
+                </div>
+                <div class="mb-3">
+                     <label for="message" class="form-label">Message</label>
+                    <textarea id="message" rows="3" class="form-control" placeholder="Your Message"></textarea>
+                </div>
+              <button class="btn btn-primary" onclick="sendMail()">Submit</button>
+             </div>
+
             </div>
         </div>
         <div class="copyright">
             <p>© 2025 Diyana K T. All reserved.</p>
         </div>
      </div>
-         <script src="script.js"></script>
+         
+<script src="script.js"></script>
 
 </body>
 </html>
