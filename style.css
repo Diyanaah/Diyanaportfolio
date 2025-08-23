@@ -80,9 +80,15 @@ nav ul li a:hover::after{
     transform: translateY(-50%);
    
 }
+.image{
+    display: flex;
+    justify-content: center;
+    left: 10px;
+    top: 300px;
+}
 .image img{
     margin: 150px;
-    width: 250px;
+    width: 30000000px;
     height: 250px;
     border-radius: 1000px;
 
