@@ -331,7 +331,7 @@ nav .bi{
     .image img{
         max-width: 250px;
         margin-top: 20px;
-        align-items: center;
+        /* align-items: center; */
     }
     .btn.btn2{
         display: block;
