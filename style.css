@@ -74,24 +74,26 @@ nav ul li a:hover::after{
 }
 .image{
     position: absolute;
-    top: 40%;
+    top: 50%;
     right: 5%;
     margin-left: 20px;
     transform: translateY(-50%);
    
 }
-.image{
+/* .image{
     display: flex;
-    justify-content: center;
+    justify-content: end;
+    align-items: center;
     left: 10px;
-    top: 200px;
-}
+    top: 250px;
+    
+} */
 .image img{
     margin: 150px;
-    width: 30000000px;
+    width: 250px;
     height: 250px;
     border-radius: 1000px;
-
+   align-items: center;
     
 }
 .social-icons{
@@ -335,7 +337,7 @@ nav .bi{
     }
   
     .image img{
-        max-width: 250px;
+        width: 250px;
         margin-top: 20px;
         /* align-items: center; */
     }
