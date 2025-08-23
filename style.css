@@ -100,14 +100,14 @@ nav ul li a:hover::after{
     transition: transform 0.5s;
 }
 .social-icons a:hover{
-    color: #1b16b1;
+    color: #e20f0f;
     transform: translateY(-5px);
 }
 .btn{
     display: block;
     margin: 50px auto;
     width: fit-content;
-    border: 1px solid #1b16b1;
+    border: 1px solid #ee1616;
     padding: 14px 50px;
     border-radius: 6px;
     text-decoration: none;
@@ -115,7 +115,7 @@ nav ul li a:hover::after{
     transition: background 0.5s;
 }
 .btn:hover{
-    background: #1b16b1;
+    background: #c41111;
 }
 .btn.btn2{
     display: inline-block;
@@ -275,7 +275,7 @@ nav ul li a:hover::after{
     margin-top: 30px;
 }
 .contact-left p i{
-    color: #243cbf;
+    color: #e01a08;
     margin-right: 15px;
     font-size: 25px;
 }
@@ -327,10 +327,10 @@ nav .bi{
     font-size: 25px;
     text-align: center;
     }
-
+  
     .image img{
         max-width: 250px;
-        margin-top: 50px;
+        margin-top: 20px;
         align-items: center;
     }
     .btn.btn2{
